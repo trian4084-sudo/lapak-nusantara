@@ -9,7 +9,7 @@ import { TABS } from "@/components/BottomNav";
 // Every mutating action below should call a server action / API route that
 // re-verifies the role and writes a row to `admin_audit_log`.
 
-export default function SuperAdminDashboard() {
+export default function Page() {
   const [flags, setFlags] = useState<Record<string, boolean>>(
     Object.fromEntries(TABS.map((t) => [t.key, true]))
   );
